@@ -34,3 +34,8 @@ jobs:
         with:
           branch: gh-pages
           folder: build
+
+      - name: Discord notification
+        uses: Ilshidur/action-discord@master
+        env:
+          DISCORD_WEBHOOK: ${{ secrets.DISCORD_WEBHOOK }}
