@@ -39,3 +39,5 @@ jobs:
         uses: Ilshidur/action-discord@master
         env:
           DISCORD_WEBHOOK: ${{ secrets.DISCORD_WEBHOOK }}
+        with:
+          args: "End Run the WebGL build. deployment_status: {{ deployment_status }}"
