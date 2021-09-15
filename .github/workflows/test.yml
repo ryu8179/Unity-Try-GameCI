@@ -24,13 +24,3 @@ jobs:
         with:
           name: Test results
           path: artifacts
-
-name: Meta Check
-on: pull_request
-
-jobs:
-  meta-check:
-    runs-on: ubuntu-latest
-    steps:
-      - uses: actions/checkout@v2
-      - uses: DeNA/unity-meta-check@3.0.0-beta4 
